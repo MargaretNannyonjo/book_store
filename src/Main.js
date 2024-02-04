@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import readingImage from "./images/reading.avif";
-import shelfImage from "./images/shelf.jpg";
 import { Card } from "./Card";
 import axios from "axios";
 
@@ -34,20 +33,7 @@ export const Main = () => {
   return (
     <>
       <div className="header" style={backgroundStyle}>
-        <div
-          className="row1"
-          style={{
-            content: "''",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${shelfImage})`,
-            clipPath: "circle(65% at left 300px)",
-            zIndex: -1,
-          }}
-        >
+        <div className="row1">
           <h1>
             Dive into the Pages of infinite Wonder,
             <br />

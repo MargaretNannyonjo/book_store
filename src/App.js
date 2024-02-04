@@ -5,7 +5,9 @@ import { Main } from "./Main";
 function App() {
   return (
     <>
-      <Main />
+      <div clasName="App">
+        <Main />
+      </div>
     </>
   );
 }
